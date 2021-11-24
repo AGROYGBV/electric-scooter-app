@@ -1,7 +1,7 @@
 const User = require("../src/user");
 
 describe('User class', () => {
-    const testUser = new User("Rachel Carson", "secretPassword1", "email@aol.com", "214.223.3551", "4664 3220 6554 9900", 1200, 1400)
+    const testUser = new User("Rachel Carson", "secretPassword1", "email@aol.com", "214.223.3551", "4664 3220 6554 9900", 1245, 1407)
 
     test('user has name', () => {
         expect(testUser.name).toBe("Rachel Carson")
@@ -19,12 +19,12 @@ describe('User class', () => {
         expect(testUser.cardNumber).toBe("4664 3220 6554 9900")
     });
     test('user has start time', () => {
-        expect(testUser.startTime).toStrictEqual(1200)
+        expect(testUser.startTime).toStrictEqual(1245)
     });
-    test('user has start time', () => {
-        expect(testUser.endTime).toStrictEqual(1400)
+    test('user has end time', () => {
+        expect(testUser.endTime).toStrictEqual(1407)
     });
     test('payment amount function works', () => {
-        expect(testUser.paymentAmount()).toStrictEqual(31)
+        expect(testUser.paymentAmount()).toBe(25.30)
     });
 });
