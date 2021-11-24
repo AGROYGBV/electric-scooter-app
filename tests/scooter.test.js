@@ -1,4 +1,4 @@
-const Scooter = require("./scooter.js");
+const Scooter = require("../src/scooter.js/index.js");
 
 describe('Scooter class', () => {
     const testScooter = new Scooter("8", "Deep Ellum", "Greenville", "Yes");

@@ -1,4 +1,4 @@
-const User = require("./user");
+const User = require("../src/user");
 
 describe('User class', () => {
     const testUser = new User("Rachel Carson", "secretPassword1", "email@aol.com", "214.223.3551", "4664 3220 6554 9900", 1200, 1400)
@@ -27,16 +27,4 @@ describe('User class', () => {
     test('payment amount function works', () => {
         expect(testUser.paymentAmount()).toStrictEqual(31)
     });
-    
-    
-    
-    
-    // test('bag needs to be within weight limit', () => {
-    //     const testBag2 = new Bag(0)
-    //     expect(testBag2.isOverLimit()).toBe(true)
-    //     const testBag3 = new Bag(26)
-    //     expect (testBag3.isOverLimit()).toBe(true)
-    //     const testBag4 = new Bag(17)
-    //     expect (testBag4.isOverLimit()).toBe(false)
-    // });
 });
