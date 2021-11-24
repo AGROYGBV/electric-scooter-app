@@ -8,18 +8,13 @@ class Scooter {
 
     static chargingStations = ["Deep Ellum", "Greenville", "Oak Cliff", "Trinity Groves", "Downtown", "Oak Lawn", "Uptown"];
 
-    isCheckedOut(checkedOut) {
-        if (this.checkedOut === "Yes") {
-            return true;
-        } else if (this.checkedOut === "No") {
-            return false;
+    checkOut() {
+        this.checkedOut = !this.checkedOut;
         }
-    }
-
 }
 
 let s1 = new Scooter("8", "Deep Ellum", "Greenville", "Yes");
-console.log(s1.isCheckedOut());
-console.log(Scooter.chargingStations);
+s1.checkOut();
+console.log(s1.checkedOut);
 
 module.exports = Scooter;
