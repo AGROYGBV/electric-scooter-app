@@ -20,5 +20,6 @@ class Scooter {
 
 let s1 = new Scooter("8", "Deep Ellum", "Greenville", "Yes");
 console.log(s1.isCheckedOut());
+console.log(Scooter.chargingStations);
 
 module.exports = Scooter;
